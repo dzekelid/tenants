@@ -27,7 +27,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tenants/master/_listings/azure-resource-manager/tenants-get.md
+- name: Azure Resource Manager API Tenants List
+  description: Gets the tenants for your account.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-resource-manager.png
+  humanURL: https://docs.microsoft.com/en-us/rest/api/resources/
+  baseURL: http:://management.azure.com//
+  tags: Tenants
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tenants/master/_listings/azure-resource-manager/tenants-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tenants/master/_listings/azure-resource-manager/tenants-get-postman.md
 x-common:
+- type: x-website
+  url: https://docs.microsoft.com/en-us/rest/api/resources/
 - type: x-website
   url: https://docs.microsoft.com/en-us/rest/api/resources/
 include: []
