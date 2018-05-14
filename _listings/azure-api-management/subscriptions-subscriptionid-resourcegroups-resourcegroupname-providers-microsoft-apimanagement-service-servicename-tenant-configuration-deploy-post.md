@@ -1,10 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: ApiManagementClient
-  description: Use these REST APIs for performing operations on User entity in Azure
-    API Management deployment. The User entity in API Management represents the developers
-    that call the APIs of the products to which they are subscribed.
+  title: Azure API Management API TenantConfiguration Deploy
+  description: This operation applies changes from the specified Git branch to the
+    configuration database. This is a long running operation and could take several
+    minutes to complete.
   version: 1.0.0
 host: management.azure.com
 basePath: /
