@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure API Management
 x-complete: 1
@@ -198,4 +197,54 @@ paths:
           description: OK
       tags:
       - Tenants
----
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/tenant/policy
+  : get:
+      summary: TenantPolicy Get
+      description: Get the global policy configuration of the tenant.
+      operationId: TenantPolicy_Get
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-apimanagementserviceservicenametenantpolicy-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Tenant Policy
+    put:
+      summary: TenantPolicy CreateOrUpdate
+      description: Creates or updates global policy configuration for the tenant.
+      operationId: TenantPolicy_CreateOrUpdate
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-apimanagementserviceservicenametenantpolicy-put
+      parameters:
+      - in: header
+        name: If-Match
+        description: The entity state (Etag) version of the tenant policy to update
+      - in: query
+        name: No Name
+      - in: body
+        name: parameters
+        description: The policy content details
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Tenant Policy
+    delete:
+      summary: TenantPolicy Delete
+      description: Deletes the global tenant policy configuration.
+      operationId: TenantPolicy_Delete
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-apimanagementserviceservicenametenantpolicy-delete
+      parameters:
+      - in: header
+        name: If-Match
+        description: The entity state (Etag) version of the tenant policy to update
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Tenant Policy
